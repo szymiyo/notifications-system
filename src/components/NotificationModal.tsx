@@ -40,14 +40,14 @@ const Modal: React.FC = () => {
         </div>
         <div className="mb-4 grid grid-cols-12 gap-1">
           <button
-            className={`col-span-4 p-4 rounded-t-lg ${currentSection === 'all' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700'
+            className={`col-span-4 p-4 rounded-t-lg text-xs 2xl:text-sm ${currentSection === 'all' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700'
               }`}
             onClick={() => handleSectionChange('all')}
           >
             All Notifications
           </button>
           <button
-            className={`col-span-4 p-4 rounded-t-lg ${currentSection === 'unread' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700'
+            className={`col-span-4 p-4 rounded-t-lg text-xs 2xl:text-sm ${currentSection === 'unread' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700'
               } rounded-l`}
             onClick={() => handleSectionChange('unread')}
           >
